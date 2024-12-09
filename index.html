@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winery E-commerce</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Winery</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#featured-wines">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <img src="https://images.unsplash.com/photo-1560074152-1f41e1015a1f?q=80&w=2999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Winery Banner">
+    <div class="banner-text">
+      <h2>Experience the Finest Wines</h2>
+      <button class="banner-btn">Learn More</button>
+    </div>
+  </section>
+
+  <main>
+    <section id="products">
+      <h2>Our Wines</h2>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1599153616848-4bb3fa7a1b3a?q=80&w=3126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cabernet Sauvignon">
+        <h3>Cabernet Sauvignon</h3>
+        <p>$25.00</p>
+        <button class="buy-button" data-product="Cabernet Sauvignon">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1599113656124-b96bf21e30d3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Q2hhcmRvbm5heSUyMGJvdGVsbGF8ZW58MHx8MHx8fDA%3D" alt="Chardonnay">
+        <h3>Chardonnay</h3>
+        <p>$20.00</p>
+        <button class="buy-button" data-product="Chardonnay">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="featured-wines">
+      <h2>Featured Wines</h2>
+      <div class="featured-card">
+        <img src="https://images.unsplash.com/photo-1661584255293-6ff59ad17e3b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fFBpbm90JTIwTm9pcnxlbnwwfHwwfHx8MA%3D%3D" alt="Pinot Noir">
+        <h3>Pinot Noir</h3>
+        <p>$30.00</p>
+        <button class="buy-button" data-product="Pinot Noir">Add to Cart</button>
+      </div>
+      <div class="featured-card">
+        <img src="https://images.unsplash.com/photo-1641835626111-4932061672ea?q=80&w=3081&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sauvignon Blanc">
+        <h3>Sauvignon Blanc</h3>
+        <p>$28.00</p>
+        <button class="buy-button" data-product="Sauvignon Blanc">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>We are passionate about crafting exceptional wines. Our commitment to quality and tradition has been at the heart of our winery for generations.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Winery E-commerce by Alan Benitez</p>
+  </footer>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Shopping Cart</h3>
+      <ul id="cart"></ul>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
